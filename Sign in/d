@@ -1,0 +1,16 @@
+ const btn = document.querySelectorAll(".dropdown-item");
+   var dropdownButton = document.getElementById("dropdownMenuButton1");
+
+   for (var i = 0; i < btn.length; i++) {
+  btn[i].addEventListener("click", changeLanguage);
+}
+
+function changeLanguage(event) {
+  var selectedLanguage = event.target.innerHTML;
+
+  if (selectedLanguage === "English") {
+    dropdownButton.innerHTML = "English";
+  } else if (selectedLanguage === "Arabic") {
+    dropdownButton.innerHTML = "Arabic";
+  }
+}

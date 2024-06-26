@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel='stylesheet'  href='../css/all.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+
+    <!-- css link -->
+    <link rel="stylesheet" href="Sign in.css">
+</head>
+<body>
+
+    <!-- icon -->
+    <a  class="s-icon" href="#">
+        <img src=".././image/icon.png"   width="150" height="50">
+    </a>
+
+
+    <div class="loginBox"> <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
+         <h3>Sign in here</h3>
+        <form action="#" method="#">
+            <div class="inputBox">
+                 <input id="uname" type="text" name="Username" placeholder="Username">
+                 <input id="pass" type="password" name="Password" placeholder="Password"> 
+                </div>
+                  
+        </form> 
+         <input type="submit" name="#" value="Login">
+        <a href="#">Forget Password<br> </a>
+        <div class="text-center">
+          <a href="sign up.html"><p style="color: #fff;">Sign-Up</p></a>
+        </div>
+        
+    </div>
+    
+
+    
+
+    <!-- footer -->
+   <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="../nf.html" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="sign up.html" class="nav-link px-2 text-muted">Sign-Up</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Privacy</a></li>
+      <li class="nav-item"><a href="FAQs.html" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Help Center</a></li>
+    </ul>
+    <div class="dropdown text-center" >
+        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Arabic
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#" onclick="changeLanguage('arabic')" >Arabic</a></li>
+          <li><a class="dropdown-item" href="#" onclick="changeLanguage('English')">English</a></li>
+          
+        </ul>
+      </div>
+  </footer>
+
+
+
+    
+
+    <!-- link js -->
+    <script src="../js/all.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js.map"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+   <script>
+    const btn=document.querySelectorAll(".dropdown-item");
+    let dropdownButton=document.getElementById("dropdownMenuButton1")
+    for(let i = 0 ; i < btn.length ;i++){
+      btn[i].addEventListener("click",changeLanguage);
+    }
+    function changeLanguage(e){
+      var selectedLanguage =e.target.innerHTML;
+      if(selectedLanguage=="Arabic"){
+        dropdownButton.innerHTML="Arabic";
+      }
+      else if(selectedLanguage=="English"){
+        dropdownButton.innerHTML="English";
+      }
+    }
+   </script>
+    
+</body>
+</html>

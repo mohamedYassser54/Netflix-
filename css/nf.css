@@ -1,0 +1,123 @@
+body, html {
+    background-color: #181818;
+    box-sizing: border-box;
+    color: #fff;
+
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#c{
+    transition: 0.3s;
+}
+
+#c:active,
+#c:focus,
+#c:hover{
+    color: #e60e00;
+}
+
+#inp-nav:focus,
+#inp-nav:hover {
+    box-shadow:0 0 8px#e60e00;
+} 
+
+
+
+
+
+
+
+/* text */
+
+
+.card{
+    background: #181818;
+}
+
+.card h3{
+    
+    word-wrap: break-word;
+    color: #fff;
+    font-size: 2.75rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.4);
+    margin-top: 50px;
+}
+.card p{
+    color: #fff;
+    font-size: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.6);
+    transition-duration: .75s;
+    line-height: 20px;
+    width: 500px;
+    font-weight: 900;
+    
+}
+
+@media(max-width:601px){
+    .card p{
+        width: 350px;
+        font-size: 15px;
+    }
+    
+}
+
+
+/*img slider */
+
+
+.owl-carousel{
+    margin: 20px 0;
+}
+.item img{
+    transition: 0.3s;
+    cursor: pointer;
+}
+  
+.item img:hover{
+    transform:scale(1.1);
+    
+}
+
+.slider-h5{
+    
+    text-decoration: none;
+}
+
+.slider-h5 a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.slider-h5 a::after{
+    content: "";
+}
+
+.slider-h5 a:hover::after{
+    content:" Explore more >";
+    font-size: 13px;
+    margin: 0 10px;
+}
+
+
+
+/* text2 */
+.container #h{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 30vh; 
+  }
+  
+ 
+  
+  .container #h .card-body {
+    text-align: center;
+  }

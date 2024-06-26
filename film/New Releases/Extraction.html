@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extraction 2</title>
+     <!-- bootstrap css -->
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <link rel='stylesheet'  href='../css/all.min.css'>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="film.css">
+</head>
+<body>
+  <!-- Just an image  navbar-->
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../../Sign in/Sign in.html">
+        <img src="image_film/Extraction/icon.png"   width="100" height="30">
+      </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../../index.html" id="c">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="c">TVShows </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../Sign in/Sign in.html" id="c">Sign in</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="../../Sign in/Sign up.html" id="c">Sign Up</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Genres
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#" id="c">Arabic</a></li>
+            <li><a class="dropdown-item" href="#" id="c">Horror</a></li>
+            <li><a class="dropdown-item" href="#" id="c">Action</a></li>
+            <li><a class="dropdown-item" href="#" id="c">Cartoons</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" id="c">All Movies</a></li>
+          </ul>
+        </li>
+       
+        
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="inp-nav">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  </nav>
+    <section>
+      <div class="image">
+        <img src="image_film/Extraction/Extraction2.jpg" alt="">
+      </div>
+    </section>
+        <img src="./image_film/Extraction/img1.png" class="icon">
+        
+        <div class="card" style=" background: none; border: none;">
+  <div class="card-body">
+    <h1 class="card-title">Extraction 2</h1>
+    <h6 class="card-subtitle mb-2 ">2023 | <span>18+</span> | 2h 3m | Action</h6>
+    <p class="card-text">Back from the brink of death, highly skilled commando Tyler Rake takes on another dangerous mission: saving the imprisoned family of a ruthless gangster.
+      Starring:Chris Hemsworth, Golshifteh Farahani, Tornike Gogrichiani.</p>
+    
+  </div>
+</div>
+
+
+<div class="card w-75 mb-3"  id="card2">
+  <div class="card-body" id="card-body2">
+    <img src="image_film/Extraction/icon.png" alt="">
+    <h5 class="card-title">Watch all you want.</h5>
+
+    <a href="#" class="btn">JOIN NOW</a>
+  </div>
+  
+</div>
+
+
+
+<div class="text-nowrap bd-highlight" id="text1">
+   <p>Chris Hemsworth returns for a bigger, riskier and deadlier assignment in this relentlessly exciting global action thriller..</p>
+</div>
+
+
+<div class="videos" >
+  <video src="video/extraction.mp4"controls autoplay loop  poster="image_film/Extraction/img.jpg"></video>
+</div> 
+
+
+<footer>
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="../../nf.html" class="nav-link px-2 text-muted">Home</a></li>
+    <li class="nav-item"><a href="../../Sign in/sign up.html" class="nav-link px-2 text-muted">Sign-Up</a></li>
+    <li class="nav-item"><a href="../../Sign in/Sign in.html" class="nav-link px-2 text-muted">Sign in</a></li>
+    <li class="nav-item"><a href="../../Sign in/FAQ/FAQs.html" class="nav-link px-2 text-muted">FAQs</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Help Center</a></li>
+  </ul>
+  <div class="dropdown text-center" >
+      <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Arabic
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#" onclick="changeLanguage('arabic')" >Arabic</a></li>
+        <li><a class="dropdown-item" href="#" onclick="changeLanguage('English')">English</a></li>
+        
+      </ul>
+    </div>
+</footer>
+
+
+
+
+<!--js-->
+ <script>
+
+    const btn=document.querySelectorAll(".dropdown-item");
+
+    let dropdownButton=document.getElementById("dropdownMenuButton1")
+    for(let i = 0 ; i < btn.length ;i++){
+      btn[i].addEventListener("click",changeLanguage);
+    }
+    function changeLanguage(e){
+      var selectedLanguage =e.target.innerHTML;
+      if(selectedLanguage=="Arabic"){
+        dropdownButton.innerHTML="Arabic";
+      }
+      else if(selectedLanguage=="English"){
+        dropdownButton.innerHTML="English";
+      }
+    }
+   </script>
+    
+
+
+     <!-- link js -->
+     <script src="../js/all.min.js"></script>
+     <script src="../js/bootstrap.bundle.min.js.map"></script>
+     <script src="../js/bootstrap.bundle.min.js"></script>
+     
+   
+     
+     
+     
+    
+</body>
+</html>
